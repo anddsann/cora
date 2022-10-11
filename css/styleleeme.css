@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'ins';
+    src: url("../tipografia/Instruction.otf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'ins';
+    margin: 150px;
+    line-height: 15px;
+}
+
+div{
+    width: 450px;
+    height: 300px;
+    border: 2px solid rgb(23, 21, 24);
+    background: rgb(255, 255, 255);
+    border-radius: 45px;
+    box-shadow: -14px -14px 29px rgb(22, 21, 22),
+    14px 14px 29px rgb(51, 45, 50);
+    padding: 25px;
+}
+h1{
+    font-family: 'ins';
+    padding: 25px;
+}
+div:hover{
+    background: rgb(255, 130, 47);
+    border-radius: 45px;
+    box-shadow: -14px -14px 29px rgb(128, 26, 0),
+    14px 14px 29px goldenrod;
+    cursor: pointer;
+}
+
+.autor{
+    justify-content: right;
+    text-align: right;
+}

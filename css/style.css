@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'ins';
+    src: url("../tipografia/Instruction.otf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body{
+    min-height: 8500px;
+    background-color: white; 
+    font-family: 'mex';
+    line-height: 15px;
+}
+
+#cora{
+    position: fixed;
+    top: 20px;
+    height: 90vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.ficha{
+    width: 150%;
+    max-width: 12000px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;  
+    bottom: 0;
+    left: 1200px;
+    right: 0; 
+    position: fixed;
+    z-index: 2;
+}
+
+.leeme{
+    font-family: 'ins';
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.scroll{
+    width: 150%;
+    max-width: 12000px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;  
+    bottom: 600px;
+    left: 10px;
+    right: 0; 
+    position: fixed;
+    transform: rotate(90);
+    z-index: 2;
+    font-family: 'ins';
+    text-decoration: none;
+    font-size: 20px;
+}
