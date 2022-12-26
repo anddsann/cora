@@ -62,3 +62,7 @@ body{
     text-decoration: none;
     font-size: 20px;
 }
+
+@media screen and (orientation: landscape) and (max-width: 780px) {
+    #cora {display: flex;}
+}
