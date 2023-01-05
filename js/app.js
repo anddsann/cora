@@ -1,11 +1,15 @@
-$(window).scroll(function(){
-    //calcular el scroll que hace el usuario
+$(window).scroll(function() {
+    // Get the current scroll position
     let pixel = $(window).scrollTop();
-    //mostrar por consola ese scroll
-    console.log({pixel});
-
-    //asociar el scroll que hace el usaurio con el tiempo rela del video
-    cora.currentTime = pixel / 245;
-    
-    window.addEventListener('resize', scrollToCurrentTime);
-});
+  
+    // Get the width of the viewport
+    let viewportWidth = $(window).width();
+  
+    if (viewportWidth <= 768) {
+      // Apply styles for viewports less than or equal to 768px wide
+      cora.currentTime = pixel / 245;
+    } else {
+      // Apply styles for viewports greater than 768px wide
+      cora.currentTime = pixel / 500;
+    }
+  });
