@@ -63,6 +63,14 @@ body{
     font-size: 20px;
 }
 
-@media screen and (orientation: landscape) and (max-width: 780px) {
-    #cora {display: flex;}
-}
+@media (max-width: 768px) {
+    #cora {
+      /* styles for viewports less than or equal to 768px wide */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    #cora {
+      /* styles for viewports greater than 768px wide */
+    }
+  }
