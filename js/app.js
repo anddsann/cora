@@ -6,4 +6,6 @@ $(window).scroll(function(){
 
     //asociar el scroll que hace el usaurio con el tiempo rela del video
     cora.currentTime = pixel / 245;
+    
+    window.addEventListener('resize', scrollToCurrentTime);
 });
